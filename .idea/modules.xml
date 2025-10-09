@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ros2_ws.iml" filepath="$PROJECT_DIR$/.idea/ros2_ws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pok_robohand.iml" filepath="$PROJECT_DIR$/.idea/Pok_robohand.iml" />
     </modules>
   </component>
 </project>
