@@ -65,14 +65,14 @@ xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/yarema
 
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveAction.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveResult.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveAction.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG xarm_gripper/MoveAction"
 	cd /home/yarema/catkin_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveAction.msg -Ixarm_gripper:/home/yarema/catkin_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
@@ -80,26 +80,26 @@ xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_py: /home/yarema
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionGoal.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG xarm_gripper/MoveActionGoal"
 	cd /home/yarema/catkin_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg -Ixarm_gripper:/home/yarema/catkin_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
 
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionResult.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveResult.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG xarm_gripper/MoveActionResult"
 	cd /home/yarema/catkin_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg -Ixarm_gripper:/home/yarema/catkin_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
 
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
-/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg/_MoveActionFeedback.py: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG xarm_gripper/MoveActionFeedback"
 	cd /home/yarema/catkin_ws/build/xarm_ros/xarm_gripper && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg -Ixarm_gripper:/home/yarema/catkin_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/yarema/catkin_ws/devel/lib/python3/dist-packages/xarm_gripper/msg
 

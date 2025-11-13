@@ -9112,17 +9112,17 @@ _run_tests_pilz_industrial_motion_planner_gtest_unittest_trajectory_generator/fa
 .PHONY : _run_tests_pilz_industrial_motion_planner_gtest_unittest_trajectory_generator/fast
 
 #=============================================================================
-# Target rules for targets named xarm5_move
+# Target rules for targets named xarm_chess_player
 
 # Build rule for target.
-xarm5_move: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 xarm5_move
-.PHONY : xarm5_move
+xarm_chess_player: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xarm_chess_player
+.PHONY : xarm_chess_player
 
 # fast build rule for target.
-xarm5_move/fast:
-	$(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build.make xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build
-.PHONY : xarm5_move/fast
+xarm_chess_player/fast:
+	$(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build.make xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build
+.PHONY : xarm_chess_player/fast
 
 #=============================================================================
 # Target rules for targets named graph_msgs_generate_messages_py
@@ -10657,7 +10657,7 @@ help:
 	@echo "... _run_tests_pilz_industrial_motion_planner_gtest_unittest_velocity_profile_atrap"
 	@echo "... unittest_trajectory_functions"
 	@echo "... _run_tests_pilz_industrial_motion_planner_gtest_unittest_trajectory_generator"
-	@echo "... xarm5_move"
+	@echo "... xarm_chess_player"
 	@echo "... graph_msgs_generate_messages_py"
 	@echo "... graph_msgs_generate_messages_nodejs"
 	@echo "... graph_msgs_generate_messages_lisp"

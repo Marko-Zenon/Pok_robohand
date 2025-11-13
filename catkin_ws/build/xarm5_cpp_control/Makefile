@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/rule:
-	cd /home/yarema/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm5_cpp_control/CMakeFiles/xarm5_move.dir/rule
-.PHONY : xarm5_cpp_control/CMakeFiles/xarm5_move.dir/rule
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/rule:
+	cd /home/yarema/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/rule
+.PHONY : xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/rule
 
 # Convenience name for target.
-xarm5_move: xarm5_cpp_control/CMakeFiles/xarm5_move.dir/rule
+xarm_chess_player: xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/rule
 
-.PHONY : xarm5_move
+.PHONY : xarm_chess_player
 
 # fast build rule for target.
-xarm5_move/fast:
-	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build.make xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build
-.PHONY : xarm5_move/fast
+xarm_chess_player/fast:
+	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build.make xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build
+.PHONY : xarm_chess_player/fast
 
 # Convenience name for target.
 xarm5_cpp_control/CMakeFiles/graph_msgs_generate_messages_py.dir/rule:
@@ -257,32 +257,32 @@ graph_msgs_generate_messages_cpp/fast:
 	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/graph_msgs_generate_messages_cpp.dir/build.make xarm5_cpp_control/CMakeFiles/graph_msgs_generate_messages_cpp.dir/build
 .PHONY : graph_msgs_generate_messages_cpp/fast
 
-src/xarm5_move.o: src/xarm5_move.cpp.o
+src/xarm_chess_player.o: src/xarm_chess_player.cpp.o
 
-.PHONY : src/xarm5_move.o
+.PHONY : src/xarm_chess_player.o
 
 # target to build an object file
-src/xarm5_move.cpp.o:
-	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build.make xarm5_cpp_control/CMakeFiles/xarm5_move.dir/src/xarm5_move.cpp.o
-.PHONY : src/xarm5_move.cpp.o
+src/xarm_chess_player.cpp.o:
+	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build.make xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/src/xarm_chess_player.cpp.o
+.PHONY : src/xarm_chess_player.cpp.o
 
-src/xarm5_move.i: src/xarm5_move.cpp.i
+src/xarm_chess_player.i: src/xarm_chess_player.cpp.i
 
-.PHONY : src/xarm5_move.i
+.PHONY : src/xarm_chess_player.i
 
 # target to preprocess a source file
-src/xarm5_move.cpp.i:
-	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build.make xarm5_cpp_control/CMakeFiles/xarm5_move.dir/src/xarm5_move.cpp.i
-.PHONY : src/xarm5_move.cpp.i
+src/xarm_chess_player.cpp.i:
+	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build.make xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/src/xarm_chess_player.cpp.i
+.PHONY : src/xarm_chess_player.cpp.i
 
-src/xarm5_move.s: src/xarm5_move.cpp.s
+src/xarm_chess_player.s: src/xarm_chess_player.cpp.s
 
-.PHONY : src/xarm5_move.s
+.PHONY : src/xarm_chess_player.s
 
 # target to generate assembly for a file
-src/xarm5_move.cpp.s:
-	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build.make xarm5_cpp_control/CMakeFiles/xarm5_move.dir/src/xarm5_move.cpp.s
-.PHONY : src/xarm5_move.cpp.s
+src/xarm_chess_player.cpp.s:
+	cd /home/yarema/catkin_ws/build && $(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build.make xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/src/xarm_chess_player.cpp.s
+.PHONY : src/xarm_chess_player.cpp.s
 
 # Help Target
 help:
@@ -294,7 +294,7 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... xarm5_move"
+	@echo "... xarm_chess_player"
 	@echo "... graph_msgs_generate_messages_py"
 	@echo "... edit_cache"
 	@echo "... test"
@@ -303,9 +303,9 @@ help:
 	@echo "... install/local"
 	@echo "... graph_msgs_generate_messages_eus"
 	@echo "... graph_msgs_generate_messages_cpp"
-	@echo "... src/xarm5_move.o"
-	@echo "... src/xarm5_move.i"
-	@echo "... src/xarm5_move.s"
+	@echo "... src/xarm_chess_player.o"
+	@echo "... src/xarm_chess_player.i"
+	@echo "... src/xarm_chess_player.s"
 .PHONY : help
 
 

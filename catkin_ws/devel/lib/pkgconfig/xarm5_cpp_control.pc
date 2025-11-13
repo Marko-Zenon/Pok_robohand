@@ -2,7 +2,7 @@ prefix=/home/yarema/catkin_ws/devel
 
 Name: xarm5_cpp_control
 Description: Description of xarm5_cpp_control
-Version: 0.0.0
+Version: 0.1.0
 Cflags: 
 Libs: -L${prefix}/lib 
 Requires: 

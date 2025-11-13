@@ -1530,7 +1530,7 @@
 /home/yarema/catkin_ws/build/xarm5_cpp_control/CMakeFiles/install.dir
 /home/yarema/catkin_ws/build/xarm5_cpp_control/CMakeFiles/list_install_components.dir
 /home/yarema/catkin_ws/build/xarm5_cpp_control/CMakeFiles/rebuild_cache.dir
-/home/yarema/catkin_ws/build/xarm5_cpp_control/CMakeFiles/xarm5_move.dir
+/home/yarema/catkin_ws/build/xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir
 /home/yarema/catkin_ws/build/xarm5_cpp_control/CMakeFiles/graph_msgs_generate_messages_py.dir
 /home/yarema/catkin_ws/build/xarm5_cpp_control/CMakeFiles/edit_cache.dir
 /home/yarema/catkin_ws/build/xarm5_cpp_control/CMakeFiles/test.dir

@@ -2842,7 +2842,7 @@ moveit_src/moveit_setup_assistant/clean: moveit_src/moveit_setup_assistant/CMake
 # Directory level rules for directory xarm5_cpp_control
 
 # Recursive "all" directory target.
-xarm5_cpp_control/all: xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all
+xarm5_cpp_control/all: xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all
 
 .PHONY : xarm5_cpp_control/all
 
@@ -2852,7 +2852,7 @@ xarm5_cpp_control/preinstall:
 .PHONY : xarm5_cpp_control/preinstall
 
 # Recursive "clean" directory target.
-xarm5_cpp_control/clean: xarm5_cpp_control/CMakeFiles/xarm5_move.dir/clean
+xarm5_cpp_control/clean: xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/clean
 xarm5_cpp_control/clean: xarm5_cpp_control/CMakeFiles/graph_msgs_generate_messages_py.dir/clean
 xarm5_cpp_control/clean: xarm5_cpp_control/CMakeFiles/graph_msgs_generate_messages_nodejs.dir/clean
 xarm5_cpp_control/clean: xarm5_cpp_control/CMakeFiles/graph_msgs_generate_messages_lisp.dir/clean
@@ -32365,72 +32365,72 @@ moveit_src/moveit_planners/pilz_industrial_motion_planner/CMakeFiles/_run_tests_
 .PHONY : moveit_src/moveit_planners/pilz_industrial_motion_planner/CMakeFiles/_run_tests_pilz_industrial_motion_planner_gtest_unittest_trajectory_generator.dir/clean
 
 #=============================================================================
-# Target rules for target xarm5_cpp_control/CMakeFiles/xarm5_move.dir
+# Target rules for target xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir
 
 # All Build rule for target.
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/exceptions/CMakeFiles/moveit_exceptions.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/profiler/CMakeFiles/moveit_profiler.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/utils/CMakeFiles/moveit_test_utils.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/utils/CMakeFiles/moveit_utils.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/background_processing/CMakeFiles/moveit_background_processing.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/kinematics_base/CMakeFiles/moveit_kinematics_base.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/robot_model/CMakeFiles/moveit_robot_model.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/transforms/CMakeFiles/moveit_transforms.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/robot_state/CMakeFiles/moveit_robot_state.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/robot_trajectory/CMakeFiles/moveit_robot_trajectory.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/collision_detection/CMakeFiles/moveit_collision_detection.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/collision_detection_fcl/CMakeFiles/moveit_collision_detection_fcl.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/kinematic_constraints/CMakeFiles/moveit_kinematic_constraints.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/planning_scene/CMakeFiles/moveit_planning_scene.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/constraint_samplers/CMakeFiles/moveit_constraint_samplers.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/planning_interface/CMakeFiles/moveit_planning_interface.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/planning_request_adapter/CMakeFiles/moveit_planning_request_adapter.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/trajectory_processing/CMakeFiles/moveit_trajectory_processing.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/distance_field/CMakeFiles/moveit_distance_field.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/collision_distance_field/CMakeFiles/moveit_collision_distance_field.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/kinematics_metrics/CMakeFiles/moveit_kinematics_metrics.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/dynamics_solver/CMakeFiles/moveit_dynamics_solver.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/python/tools/CMakeFiles/moveit_python_tools.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_core/collision_detection_bullet/CMakeFiles/moveit_collision_detection_bullet.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/occupancy_map_monitor/CMakeFiles/moveit_ros_occupancy_map_monitor.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/rdf_loader/CMakeFiles/moveit_rdf_loader.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/collision_plugin_loader/CMakeFiles/moveit_collision_plugin_loader.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/kinematics_plugin_loader/CMakeFiles/moveit_kinematics_plugin_loader.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/robot_model_loader/CMakeFiles/moveit_robot_model_loader.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/constraint_sampler_manager_loader/CMakeFiles/moveit_constraint_sampler_manager_loader.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/planning_pipeline/CMakeFiles/moveit_planning_pipeline.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/trajectory_execution_manager/CMakeFiles/moveit_trajectory_execution_manager.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/plan_execution/CMakeFiles/moveit_plan_execution.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning/moveit_cpp/CMakeFiles/moveit_cpp.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/move_group/CMakeFiles/moveit_move_group_capabilities_base.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/manipulation/pick_place/CMakeFiles/moveit_pick_place_planner.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/warehouse/warehouse/CMakeFiles/moveit_warehouse.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning_interface/py_bindings_tools/CMakeFiles/moveit_py_bindings_tools.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning_interface/common_planning_interface_objects/CMakeFiles/moveit_common_planning_interface_objects.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning_interface/planning_scene_interface/CMakeFiles/moveit_planning_scene_interface.dir/all
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all: moveit_src/moveit_ros/planning_interface/move_group_interface/CMakeFiles/moveit_move_group_interface.dir/all
-	$(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build.make xarm5_cpp_control/CMakeFiles/xarm5_move.dir/depend
-	$(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build.make xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num= "Built target xarm5_move"
-.PHONY : xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/exceptions/CMakeFiles/moveit_exceptions.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/profiler/CMakeFiles/moveit_profiler.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/utils/CMakeFiles/moveit_test_utils.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/utils/CMakeFiles/moveit_utils.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/background_processing/CMakeFiles/moveit_background_processing.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/kinematics_base/CMakeFiles/moveit_kinematics_base.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/robot_model/CMakeFiles/moveit_robot_model.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/transforms/CMakeFiles/moveit_transforms.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/robot_state/CMakeFiles/moveit_robot_state.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/robot_trajectory/CMakeFiles/moveit_robot_trajectory.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/collision_detection/CMakeFiles/moveit_collision_detection.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/collision_detection_fcl/CMakeFiles/moveit_collision_detection_fcl.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/kinematic_constraints/CMakeFiles/moveit_kinematic_constraints.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/planning_scene/CMakeFiles/moveit_planning_scene.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/constraint_samplers/CMakeFiles/moveit_constraint_samplers.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/planning_interface/CMakeFiles/moveit_planning_interface.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/planning_request_adapter/CMakeFiles/moveit_planning_request_adapter.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/trajectory_processing/CMakeFiles/moveit_trajectory_processing.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/distance_field/CMakeFiles/moveit_distance_field.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/collision_distance_field/CMakeFiles/moveit_collision_distance_field.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/kinematics_metrics/CMakeFiles/moveit_kinematics_metrics.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/dynamics_solver/CMakeFiles/moveit_dynamics_solver.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/python/tools/CMakeFiles/moveit_python_tools.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_core/collision_detection_bullet/CMakeFiles/moveit_collision_detection_bullet.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/occupancy_map_monitor/CMakeFiles/moveit_ros_occupancy_map_monitor.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/rdf_loader/CMakeFiles/moveit_rdf_loader.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/collision_plugin_loader/CMakeFiles/moveit_collision_plugin_loader.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/kinematics_plugin_loader/CMakeFiles/moveit_kinematics_plugin_loader.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/robot_model_loader/CMakeFiles/moveit_robot_model_loader.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/constraint_sampler_manager_loader/CMakeFiles/moveit_constraint_sampler_manager_loader.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/planning_pipeline/CMakeFiles/moveit_planning_pipeline.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/planning_scene_monitor/CMakeFiles/moveit_planning_scene_monitor.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/trajectory_execution_manager/CMakeFiles/moveit_trajectory_execution_manager.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/plan_execution/CMakeFiles/moveit_plan_execution.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning/moveit_cpp/CMakeFiles/moveit_cpp.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/move_group/CMakeFiles/moveit_move_group_capabilities_base.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/manipulation/pick_place/CMakeFiles/moveit_pick_place_planner.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/warehouse/warehouse/CMakeFiles/moveit_warehouse.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning_interface/py_bindings_tools/CMakeFiles/moveit_py_bindings_tools.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning_interface/common_planning_interface_objects/CMakeFiles/moveit_common_planning_interface_objects.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning_interface/planning_scene_interface/CMakeFiles/moveit_planning_scene_interface.dir/all
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all: moveit_src/moveit_ros/planning_interface/move_group_interface/CMakeFiles/moveit_move_group_interface.dir/all
+	$(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build.make xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/depend
+	$(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build.make xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num= "Built target xarm_chess_player"
+.PHONY : xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all
 
 # Build rule for subdir invocation for target.
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/rule: cmake_check_build_system
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yarema/catkin_ws/build/CMakeFiles 15
-	$(MAKE) -f CMakeFiles/Makefile2 xarm5_cpp_control/CMakeFiles/xarm5_move.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yarema/catkin_ws/build/CMakeFiles 0
-.PHONY : xarm5_cpp_control/CMakeFiles/xarm5_move.dir/rule
+.PHONY : xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/rule
 
 # Convenience name for target.
-xarm5_move: xarm5_cpp_control/CMakeFiles/xarm5_move.dir/rule
+xarm_chess_player: xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/rule
 
-.PHONY : xarm5_move
+.PHONY : xarm_chess_player
 
 # clean rule for target.
-xarm5_cpp_control/CMakeFiles/xarm5_move.dir/clean:
-	$(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm5_move.dir/build.make xarm5_cpp_control/CMakeFiles/xarm5_move.dir/clean
-.PHONY : xarm5_cpp_control/CMakeFiles/xarm5_move.dir/clean
+xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/clean:
+	$(MAKE) -f xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/build.make xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/clean
+.PHONY : xarm5_cpp_control/CMakeFiles/xarm_chess_player.dir/clean
 
 #=============================================================================
 # Target rules for target xarm5_cpp_control/CMakeFiles/graph_msgs_generate_messages_py.dir

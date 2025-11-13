@@ -64,14 +64,14 @@ xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp: /home/yarem
 
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveAction.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveResult.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveAction.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from xarm_gripper/MoveAction.msg"
@@ -80,28 +80,28 @@ xarm_ros/xarm_gripper/CMakeFiles/xarm_gripper_generate_messages_cpp: /home/yarem
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionGoal.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionGoal.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionGoal.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveGoal.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionGoal.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionGoal.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionGoal.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionGoal.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from xarm_gripper/MoveActionGoal.msg"
 	cd /home/yarema/catkin_ws/src/xarm_ros/xarm_gripper && /home/yarema/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionGoal.msg -Ixarm_gripper:/home/yarema/catkin_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/yarema/catkin_ws/devel/include/xarm_gripper -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveResult.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveResult.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionResult.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from xarm_gripper/MoveActionResult.msg"
 	cd /home/yarema/catkin_ws/src/xarm_ros/xarm_gripper && /home/yarema/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionResult.msg -Ixarm_gripper:/home/yarema/catkin_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/yarema/catkin_ws/devel/include/xarm_gripper -e /opt/ros/noetic/share/gencpp/cmake/..
 
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
-/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalID.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /opt/ros/noetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveFeedback.msg
 /home/yarema/catkin_ws/devel/include/xarm_gripper/MoveActionFeedback.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yarema/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from xarm_gripper/MoveActionFeedback.msg"
 	cd /home/yarema/catkin_ws/src/xarm_ros/xarm_gripper && /home/yarema/catkin_ws/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/yarema/catkin_ws/devel/share/xarm_gripper/msg/MoveActionFeedback.msg -Ixarm_gripper:/home/yarema/catkin_ws/devel/share/xarm_gripper/msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xarm_gripper -o /home/yarema/catkin_ws/devel/include/xarm_gripper -e /opt/ros/noetic/share/gencpp/cmake/..

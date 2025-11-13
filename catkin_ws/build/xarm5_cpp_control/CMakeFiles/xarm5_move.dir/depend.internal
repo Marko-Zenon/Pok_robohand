@@ -44,6 +44,14 @@ xarm5_cpp_control/CMakeFiles/xarm5_move.dir/src/xarm5_move.cpp.o
  /opt/ros/noetic/include/actionlib_msgs/GoalID.h
  /opt/ros/noetic/include/actionlib_msgs/GoalStatus.h
  /opt/ros/noetic/include/actionlib_msgs/GoalStatusArray.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryAction.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryActionFeedback.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryActionGoal.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryActionResult.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryFeedback.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryGoal.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryResult.h
+ /opt/ros/noetic/include/control_msgs/JointTolerance.h
  /opt/ros/noetic/include/eigen_stl_containers/eigen_stl_containers.h
  /opt/ros/noetic/include/eigen_stl_containers/eigen_stl_map_container.h
  /opt/ros/noetic/include/eigen_stl_containers/eigen_stl_vector_container.h

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/yarema/catkin_ws/devel/setup.sh
