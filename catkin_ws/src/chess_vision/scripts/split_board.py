@@ -4,7 +4,7 @@ import os
 import shutil
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-IMAGE_FILE_RELATIVE = "../data/current_photo/board.jpg"
+IMAGE_FILE_RELATIVE = "../data/current_photo/board_start.jpg"
 OUTPUT_FOLDER_RELATIVE = "../data/cells"
 
 IMAGE_FILE = os.path.join(SCRIPT_DIR, IMAGE_FILE_RELATIVE)
@@ -16,7 +16,7 @@ ROTATION_ANGLE = 0.0
 
 
 # Це трохи "внутрішні" точки, щоб дерево точно не попало в кадр
-src_points = np.float32([[114, 39], [515, 27], [526, 444], [114, 444]])
+src_points = np.float32([[156, 33], [560, 25], [568, 440], [156, 439]])
 
 
 def rotate_image(image, angle):
