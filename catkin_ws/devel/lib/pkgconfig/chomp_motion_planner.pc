@@ -1,8 +1,0 @@
-prefix=/home/yarema/catkin_ws/devel
-
-Name: chomp_motion_planner
-Description: Description of chomp_motion_planner
-Version: 1.1.16
-Cflags: -I/home/yarema/catkin_ws/src/moveit_src/moveit_planners/chomp/chomp_motion_planner/include
-Libs: -L${prefix}/lib -lchomp_motion_planner
-Requires: 

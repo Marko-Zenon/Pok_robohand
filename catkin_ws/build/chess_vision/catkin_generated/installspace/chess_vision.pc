@@ -1,0 +1,8 @@
+prefix=/home/yarko/catkin_ws/install
+
+Name: chess_vision
+Description: Description of chess_vision
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: cv_bridge rospy sensor_msgs std_msgs

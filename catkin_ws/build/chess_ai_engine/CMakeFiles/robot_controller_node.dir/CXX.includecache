@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yarko/catkin_ws/src/chess_ai_engine/src/robot_controller_node.cpp
+iostream
+-
+string
+-
+cmath
+-
+
