@@ -1,1 +1,0 @@
-control_msgs:controller_interface:controller_manager:gazebo_msgs:gazebo_ros:geometry_msgs:hardware_interface:rclcpp:sensor_msgs:std_msgs:trajectory_msgs

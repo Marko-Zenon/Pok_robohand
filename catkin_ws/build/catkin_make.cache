@@ -1,0 +1,2 @@
+chess_ai_engine:chess_vision
+-DCATKIN_DEVEL_PREFIX=/home/nazik/catkin_ws/src/Pok_robohand/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nazik/catkin_ws/src/Pok_robohand/catkin_ws/install -G Unix Makefiles

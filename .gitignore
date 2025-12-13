@@ -1,0 +1,6 @@
+.vscode/
+.idea/
+.git_template
+**/old
+xarm_description/config/kinematics/usercatkin_ws_final.zip
+catkin_ws_final.zip
