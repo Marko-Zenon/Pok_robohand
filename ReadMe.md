@@ -1,3 +1,5 @@
+## Important: the ReadMe.md, ReadMe_cn.md and ReadMe_others.md file were copied from this [repository](https://github.com/xArm-Developer/xarm_ros?tab=readme-ov-file#47-run-the-demo-in-gazebo-simulator). A project report is in the Project_Report.pdf file. A main code of the project is in the catkin_ws directory.
+
 For simplified Chinese version: [简体中文版](./ReadMe_cn.md)    
 For **UFACTORY Lite 6/850** users, make sure you have followed the instructions before chapter 4.7 on this page, then switch to [ReadMe for Lite6/UF850](./ReadMe_others.md).    
 For **kinetic** users, please use the [kinetic branch](https://github.com/xArm-Developer/xarm_ros/tree/kinetic).
