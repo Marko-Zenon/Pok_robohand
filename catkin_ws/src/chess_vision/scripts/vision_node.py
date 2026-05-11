@@ -18,37 +18,32 @@ class ChessBlueDetector:
     def __init__(self):
         rospy.init_node('chess_vision_blue', anonymous=True)
         self.bridge = CvBridge()
-        
-        # Внутрішня логіка шахів
-        self.board = chess.Board()
-        
 
-        # Публікуємо FEN, бо твій AI чекає саме його
+        self.board = chess.Board()
+
+        # Publishing FEN
         self.fen_pub = rospy.Publisher('/chess_state/fen', String, queue_size=10, latch=True)
 
-        # Налаштування шляхів
         self.board_path = os.path.normpath(os.path.join(current_dir, "../data/current_photo/board2.jpg"))
         self.cells_dir = os.path.normpath(os.path.join(current_dir, "../data/cells"))
         self.splitter = ChessSplitter(self.cells_dir)
 
-        # Стан (сині маркери)
         self.previous_state = {}
         
         self.last_process_time = 0
-        self.interval = 10.0 # Час між перевірками (щоб встигнути забрати руки)
+        self.interval = 10.0 # Time between checks
 
         rospy.Subscriber("/usb_cam/image_raw", Image, self.callback)
-        
-        # Відправляємо початковий стан
+
         self.fen_pub.publish(self.board.fen())
         
-        print("VISION: Запущено. Шукаю сині маркери.")
-        print(f"Публікую FEN у /chess_state/fen")
+        print("Vision started")
+        print(f"Publishing FEN to /chess_state/fen")
 
     def is_blue_present(self, image):
         if image is None: return False
         hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-        # Налаштування синього
+        # Blue settings
         mask = cv2.inRange(hsv, np.array([90, 80, 50]), np.array([130, 255, 255]))
         return cv2.countNonZero(mask) > 50
 
@@ -65,14 +60,12 @@ class ChessBlueDetector:
 
         if not vanished and not appeared: return None
 
-        print(f"Зміни: Пішло з {vanished}, Прийшло на {appeared}")
+        print(f"Changes: Dissepeared from {vanished}, Appeared at {appeared}")
 
-        # Шукаємо легальний хід, який пояснює ці зміни
+        # Find legal move
         for move in self.board.legal_moves:
             uci = move.uci()
             src, dst = uci[:2], uci[2:4]
-
-            # Звичайний хід або взяття
             if src in vanished and (dst in appeared or (self.board.is_capture(move) and current_state.get(dst))):
                 return move
         return None
@@ -81,12 +74,10 @@ class ChessBlueDetector:
         if time.time() - self.last_process_time < self.interval: return
 
         try:
-            # Обробка фото
             cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
-            cv_image = cv2.resize(cv_image, (640, 480)) # РЕСАЙЗ ОБОВ'ЯЗКОВИЙ
+            cv_image = cv2.resize(cv_image, (640, 480))
             self.splitter.process_image(cv_image)
 
-            # Сканування клітинок
             current_state = {}
             files = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
             ranks = ['1', '2', '3', '4', '5', '6', '7', '8']
@@ -102,18 +93,17 @@ class ChessBlueDetector:
                 self.last_process_time = time.time()
                 return
 
-            # Спроба знайти хід
             move = self.detect_move(current_state)
 
             if move:
-                print(f"ХІД ЛЮДИНИ: {move.uci()}")
-                self.board.push(move) # Оновлюємо внутрішню логіку
+                print(f"User move: {move.uci()}")
+                self.board.push(move)
                 
-                # ВІДПРАВЛЯЄМО FEN ДЛЯ ТВОГО AI
+                # Publish FEN for AI
                 fen_str = self.board.fen()
                 self.fen_pub.publish(fen_str)
-                print(f"Відправлено FEN: {fen_str}")
-                
+                print(f"Published FEN: {fen_str}")
+
                 self.previous_state = current_state
             
             self.last_process_time = time.time()

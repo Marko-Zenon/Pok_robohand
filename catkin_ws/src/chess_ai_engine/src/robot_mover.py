@@ -9,17 +9,17 @@ class RobotMover:
     def __init__(self):
         rospy.init_node('robot_mover_node', anonymous=True)
         
-        # 1. Підключення до робота (з твого test.py)
+        # Connect to robot
         ip = '192.168.1.242'
         self.arm = XArmAPI(ip)
         self.arm.motion_enable(True)
         self.arm.set_mode(0)
         self.arm.set_state(0)
         time.sleep(1)
-        
+
         print(f"Robot Connected: {ip}")
 
-        # 2. Твої координати (HARDCODED POSITIONS)
+        # HARDCODED POSITIONS
         self.BOARD_POSITIONS = {
             "a1": [-16.2, 87.3, -137, 51.7, 0],
             "b1": [-11.2, 86.7, -135.3, 52.8, 0],
@@ -94,10 +94,10 @@ class RobotMover:
             "h8": [36.8, 47.6, -42.2, 3.8, 0],
         }
         
-        # Безпечна позиція (над дошкою)
+        # Safe position over board
         self.SAFE_POS = [0.1, -17.7, -64, 83.1, 0]
 
-        # 3. Підписка на топік AI
+        # AI topic subscription
         rospy.Subscriber("/ai_move", String, self.move_callback)
         print("Waiting for commands on topic /ai_move ...")
 
@@ -107,7 +107,6 @@ class RobotMover:
         self.execute_physical_move(move_str)
 
     def execute_physical_move(self, move: str):
-        # Перевірка формату (наприклад, "e2e4")
         if len(move) < 4: 
             print("Invalid move format")
             return
@@ -119,39 +118,39 @@ class RobotMover:
             print(f"Unknown coordinates: {start} -> {end}")
             return
 
-        print(f"🔧 Executing move: {start} -> {end}")
+        print(f"Executing move: {start} -> {end}")
 
         
-        # 1. Відкрити грипер, піднятися
+        # Open the gripper, ascend
         self.arm.set_gripper_position(500, wait=True)
         # self.arm.set_servo_angle(angle=self.SAFE_POS, speed=20, wait=True, is_radian=False)
 
-        # 2. Піти на СТАРТ
+        # go to start
         print(f"Going to {start}...")
         self.arm.set_servo_angle(angle=self.BOARD_POSITIONS[start], speed=20, wait=True, is_radian=False)
         time.sleep(0.4)
 
-        # 3. Взяти фігуру
+        # take a piece
         self.arm.set_gripper_position(160, wait=True)
-        time.sleep(1) # Дати час на захват
+        time.sleep(1)
 
-        # 4. Підняти (в безпечну)
+        # ascend
         self.arm.set_servo_angle(angle=self.SAFE_POS, speed=20, wait=True, is_radian=False)
         time.sleep(0.4)
 
-        # 5. Піти на ФІНІШ
+        # go to finish
         print(f"Going to {end}...")
         self.arm.set_servo_angle(angle=self.BOARD_POSITIONS[end], speed=20, wait=True, is_radian=False)
         time.sleep(0.4)
 
-        # 6. Відпустити
+        # let go
         self.arm.set_gripper_position(500, wait=True)
         time.sleep(1)
 
-        # 7. Повернутись додому (безпечна позиція)
+        # go to safe zone
         self.arm.set_servo_angle(angle=self.SAFE_POS, speed=20, wait=True, is_radian=False)
         
-        print("Move complete!")
+        print("Move complete")
 
     def shutdown(self):
         self.arm.disconnect()

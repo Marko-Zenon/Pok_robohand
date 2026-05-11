@@ -13,11 +13,10 @@ void publish_fen(ros::Publisher& pub, const std::string& fen) {
 
 int main(int argc, char **argv)
 {
-    // 1. Initialization
     ros::init(argc, argv, "vision_publisher_cpp_node");
     ros::NodeHandle nh;
 
-    // 2. Create publisher on /chess_state/fen (ВИПРАВЛЕНО, ЩОБ ВІДПОВІДАВ AI NODE)
+    // 2. Create publisher on /chess_state/fen
     ros::Publisher fen_pub = nh.advertise<std_msgs::String>("/chess_state/fen", 10);
 
     // Test FEN strings to simulate moves
@@ -30,13 +29,12 @@ int main(int argc, char **argv)
         "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
     };
 
-    // --- FIX FREQUENCY: 5 SECONDS (0.2 Hz) ---
     double desired_rate = 0.2; // Frequency (Hz) = 1 / 5 seconds
     ros::Rate loop_rate(desired_rate);
     int step = 0;
 
-    ROS_INFO("--- C++ VISION SIMULATOR STARTING ---");
-    ROS_INFO("It will publish the next FEN every 5.0 seconds (0.2 Hz).");
+    ROS_INFO("C++ VISION SIMULATOR STARTING");
+    ROS_INFO("It will publish the next FEN every 5.0 seconds (0.2 Hz)");
 
     while (ros::ok())
     {

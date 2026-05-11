@@ -4,42 +4,40 @@ import time
 import rospy
 from std_srvs.srv import Trigger
 
-# --- НАЛАШТУВАННЯ ROS (Клієнт) ---
+# ROS (Client)
 try:
     rospy.init_node('xarm_chess_controller', anonymous=True)
 except rospy.ROSInterruptException:
     pass
 
 def trigger_camera_update():
-    """Функція, що 'стукає' до камери і каже зробити фото"""
-    print("📡 Синхронізація з камерою...")
-    # Чекаємо, поки сервіс стане доступним (щоб не впало, якщо камера не запущена)
+    """Trigger camera"""
+    print("Camera sync...")
+
     rospy.wait_for_service('trigger_chess_capture', timeout=5.0)
     try:
         capture_func = rospy.ServiceProxy('trigger_chess_capture', Trigger)
         response = capture_func()
         if response.success:
-            print("✅ Камера підтвердила обробку.")
+            print("Camera is reade")
         else:
-            print(f"⚠️ Камера повернула помилку: {response.message}")
+            print(f"Error with camera: {response.message}")
     except (rospy.ServiceException, rospy.ROSException) as e:
-        print(f"❌ Не вдалося зв'язатися з камерою (чи запущено chess_cam.py?): {e}")
+        print(f"Error with camera: {e}")
 
-# --- ПІДКЛЮЧЕННЯ ДО РОБОТА ---
+# Connection to robot
 arm = XArmAPI('192.168.1.242')
 arm.motion_enable(True)
 arm.set_mode(0)
 arm.set_state(0)
 
-# --- НАЛАШТУВАННЯ ГРИПЕРА (ВИПРАВЛЕНО) ---
-print("⚙️ Налаштування грипера...")
+#  Gripper settings
 arm.clean_gripper_error()
 arm.set_gripper_mode(0)
-arm.set_gripper_enable(True)   # Вмикаємо живлення
-arm.set_gripper_speed(3000)    # Швидкість
+arm.set_gripper_enable(True)
+arm.set_gripper_speed(3000)
 time.sleep(1)
 
-# --- КООРДИНАТИ ---
 SAFE_POS = [0.1, -17.7, -64, 83.1, 0]
 
 BOARD_POSITIONS = {
@@ -84,7 +82,6 @@ BOARD_POSITIONS = {
     "g8": [29.2, 48.2, -32.3, -12.4, 0], "h8": [36.8, 47.6, -42.2, 3.8, 0],
 }
 
-# Позиції грипера (800 - відкритий, 160 - закритий)
 GRIPPER_OPEN = 800
 GRIPPER_CLOSE = 160
 
@@ -93,52 +90,43 @@ def move_piece(arm, move: str):
     end = move[2:]
     
     if start not in BOARD_POSITIONS or end not in BOARD_POSITIONS:
-        print("❌ Невірна клітинка")
+        print("Invalid cell")
         return
     
-    print(f"♟️ Хід {move}:")
+    print(f"Move {move}:")
 
-    # 1. Відкрити грипер і підійти до старту
     arm.set_gripper_position(GRIPPER_OPEN, wait=True)
     arm.set_servo_angle(angle=BOARD_POSITIONS[start], speed=20, wait=True, is_radian=False)
     time.sleep(0.2)
 
-    # 2. Взяти фігуру
     arm.set_gripper_position(GRIPPER_CLOSE, wait=True)
-    time.sleep(1.0) # Чекаємо поки стисне
+    time.sleep(1.0)
 
-    # 3. Підняти (Safe Pos)
     arm.set_servo_angle(angle=SAFE_POS, speed=20, wait=True, is_radian=False)
     time.sleep(0.2)
 
-    # 4. Перенести до цілі
     arm.set_servo_angle(angle=BOARD_POSITIONS[end], speed=20, wait=True, is_radian=False)
     time.sleep(0.2)
 
-    # 5. Відпустити
     arm.set_gripper_position(GRIPPER_OPEN, wait=True)
-    time.sleep(1.0) # Чекаємо поки відкриє
+    time.sleep(1.0)
 
-    # 6. Втекти в безпечну позицію
     arm.set_servo_angle(angle=SAFE_POS, speed=20, wait=True, is_radian=False)
-    
-    # --- ВАЖЛИВИЙ МОМЕНТ: ВИКЛИК КАМЕРИ ---
     trigger_camera_update()
     
-    print("🏁 Хід завершено!")
+    print("Mve is done")
 
-# --- ГОЛОВНИЙ ЦИКЛ ---
 while True:
     try:
-        cmd = input("Введи хід (e2e4 або exit): ").strip().lower()
+        cmd = input("Input your move (e2e4 or exit): ").strip().lower()
         if cmd == "exit":
             break
         if len(cmd) != 4:
-            print("Формат: e2e4")
+            print("Format: e2e4")
             continue
         move_piece(arm, cmd)
     except KeyboardInterrupt:
-        print("\nЗупинка...")
+        print("\nStop")
         arm.set_state(4)
         arm.disconnect()
         break
